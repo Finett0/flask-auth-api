@@ -27,11 +27,5 @@ def login():
 
     return jsonify ({"message":"Credenciais inválidas"}),404
 
-
-
-@app.route('/hello-word',methods=['GET'])
-def hello_world():
-    return "Hello World!"
-
 if __name__ == "__main__":
     app.run(debug=True)
